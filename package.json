@@ -1,6 +1,6 @@
 {
   "name": "guangzan",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A CLI tool to display personal information card in terminal",
   "main": "dist/index.js",
   "bin": {
