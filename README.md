@@ -1,14 +1,8 @@
-# Guangzan CLI
+# Termbio
 
 A CLI tool to display your personal information card in the terminal, inspired by `npx posva`.
 
 ![Demo](assets/demo.png)
-
-## Usage
-
-```bash
-npx guangzan
-```
 
 ## Features
 
@@ -18,55 +12,11 @@ npx guangzan
 - 🖼️ Display avatar image(WIP)
 - 🌈 Terminal-friendly output
 
-## Customization
+## Build your own
 
-Edit the `personalInfo` object in `src/index.ts` to customize your information:
-
-```typescript
-const personalInfo = {
-  name: 'Your Name',
-  fullName: 'Your Full Name',
-  title: 'Your Title',
-  description: 'Your description',
-  links: {
-    github: 'https://github.com/yourusername',
-    x: '@yourusername',
-    bluesky: '@yourusername',
-    web: 'https://yourwebsite.com'
-  },
-  avatarUrl: 'https://your-avatar-url.com/avatar.png'
-}
-```
-
-Then rebuild:
-
-```bash
-npm run build
-```
-
-## Development
-
-```bash
-# Install dependencies
-npm install
-
-# Build
-npm run build
-
-# Test locally
-npm link
-guangzan
-```
-
-## Publishing to npm
-
-Before publishing, make sure to:
-
-1. Update the `personalInfo` object in `src/index.ts` with your actual information
+1. Update the `defaultPersonalInfo` object in `src/config.ts` with your actual information
 2. Update `package.json` with your name, author, and repository (if applicable)
-3. Check if the package name `guangzan` is available on npm (or use a scoped name like `@yourusername/guangzan`)
-
-Then:
+3. Check if the package name `yourusername` is available on npm
 
 ```bash
 # Install dependencies
@@ -75,17 +25,11 @@ npm install
 # Build the project
 npm run build
 
-# Test locally
-npm link
-guangzan
-
 # Login to npm (if not already logged in)
 npm login
 
 # Publish to npm
 npm publish
-# Or if using a scoped package:
-npm publish --access public
 ```
 
 ## License
