@@ -2,6 +2,8 @@
 
 A CLI tool to display your personal information card in the terminal, inspired by `npx posva`.
 
+![Demo](assets/demo.png)
+
 ## Usage
 
 ```bash
