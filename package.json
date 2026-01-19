@@ -1,0 +1,45 @@
+{
+	"name": "zane",
+	"version": "0.1.4",
+	"description": "A CLI tool to display personal information card in terminal",
+	"main": "dist/index.js",
+	"bin": {
+		"zane": "./dist/index.js"
+	},
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"prepublishOnly": "npm run build",
+		"start": "tsx src/index.ts",
+		"build": "tsdown",
+		"typecheck": "tsc --noEmit",
+		"release": "bumpp",
+		"lint": "ultracite check"
+	},
+	"keywords": [
+		"cli",
+		"terminal",
+		"card",
+		"info"
+	],
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"chalk": "^5.3.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.11",
+		"@types/node": "^20.14.0",
+		"bumpp": "^10.4.0",
+		"lefthook": "^2.0.15",
+		"tsdown": "^0.14.2",
+		"tsx": "^4.21.0",
+		"typescript": "^5.5.0",
+		"ultracite": "7.0.11"
+	},
+	"engines": {
+		"node": ">=18"
+	}
+}
