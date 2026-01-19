@@ -1,6 +1,6 @@
 {
 	"name": "zane",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "A CLI tool to display personal information card in terminal",
 	"main": "dist/index.js",
 	"bin": {
